@@ -6,15 +6,15 @@
     --primary-3: #ECCBD9;
     --primary-4: #5C164E;
     --secondary-1: #D9DBE9;
-    --neutral-100: #170F49;
-    --neutral-200: #514F6E;
-    --neutral-300: #6F6C90;
-    --neutral-400: #A0A3BD;
-    --neutral-500: #D9DBE9;
-    --neutral-600: #EFF0F6;
-    --neutral-700: #F7F7FB;
-    --neutral-800: #FFFFFF;
-
+    --neutral-800: #170F49;
+    --neutral-700: #514F6E;
+    --neutral-600: #6F6C90;
+    --neutral-500: #A0A3BD;
+    --neutral-400: #D9DBE9;
+    --neutral-300: #EFF0F6;
+    --neutral-200: #F7F7FB;
+    --neutral-100: #FFFFFF;
+    --active-like-color: #ffd3b6;
 }
 
 
@@ -22,6 +22,7 @@ h1 {
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 70px;
+    text-align: center;
 }
 
 h2 {
@@ -72,6 +73,9 @@ h6 {
     font-weight: normal;
 }
 
+.colortext {
+    color: var(--primary-1);
+}
 
 
 @media screen and (max-width: 768px) {
@@ -108,16 +112,17 @@ h6 {
 
     .large {
         font-family: var(--main-font);
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .default {
         font-family: var(--main-font);
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .small {
         font-family: var(--main-font);
-        font-size: 24px;
+        font-size: 16px;
     }
 }
+

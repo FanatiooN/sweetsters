@@ -1,73 +1,107 @@
 footer {
     padding: 20px;
-    background: #ffffff;
-    
+    background: var(--neutral-300);
+}
+
+
+.wrap-footer-blocks {
+    display: grid;
+    grid-template-columns: 1.3fr repeat(3, 1fr);
+}
+
+.soc-network {
+    width: 2rem;
+    fill: #9B287B;
+}
+
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block h6 {
+    color: var(--neutral-800);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-block a,
+.footer-block p {
+    color: var(--neutral-600);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-block p,
+.footer-block ul {
+    margin: 0;
+    padding-left: 0px;
+}
+
+.footer-block li {
+    margin-bottom: 1rem;
+}
+
+.footer-block-1 {
+
+    justify-self: center;
+    gap: 1rem;
+
+}
+
+.footer-block-1 p {
+    margin: 1rem 0;
+}
+
+.footer-block-1>img {
+    width: 250px;
+}
+
+.footer-block-4 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 70%;
+}
+
+.footer-block-4 p {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) {
 
     .wrap-footer-blocks {
-        display: grid;
-        grid-template-columns: 1.3fr repeat(4, 1fr);
-    }
-
-    .soc-network {
-        width: 2rem;
-        fill: #9B287B;
-
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
-    .footer-block {
-        display: flex;
-        flex-direction: column;
+    .wrap-footer-blocks>* {
+        margin-top: 16px;
+    }
 
+    .wrap-footer-blocks .footer-block-1 {
 
-        h6 {
-            color: var(--neutral-100);
-            margin: 0;
-            margin-bottom: 1rem;
-        }
+        justify-self: normal;
+    }
+}
 
-        a,
-        p {
-            color: var(--neutral-300);
-            list-style-type: none;
-            text-decoration: none;
-        }
+@media screen and (max-width: 768px) {
 
-        p,
-        ul {
-            margin: 0;
-            padding-left: 0px;
-        }
-
-        li {
-            margin-bottom: 1rem;
-        }
+    .wrap-footer-blocks {
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
-    .footer-block-1 {
-    
-        justify-self: center;
-        gap: 1rem;
-        p {
-            margin: 1rem 0;
-        }
-
-        >img {
-            width: 250px;
-        }
+    .wrap-footer-blocks>* {
+        margin-top: 16px;
     }
 
-    .footer-block-5 {
-        li {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            width: 70%;
-        }
 
-        p {
-            margin: 0 auto;
-        }
+    .footer-block-4 li {
+        width: 60%;
     }
+
+
 }

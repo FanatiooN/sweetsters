@@ -1,53 +1,57 @@
+body,
+:after,
+:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .wrap-main-box-and-bike {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    .main-box {
-        margin-top: 20vh;
-        width: 50%;
-    }
-
-    .bike {
-        width: auto;
-    }
-
-    .buttons {
-        display: flex;
-        gap: 25%;
-
-        a {
-            text-decoration: none;
-            color: var(--secondary-1);
-
-            padding: 1rem 1.5rem;
-            border-radius: 1rem;
-            border: 0.25rem solid var(--primary-2);
-            margin: auto 0;
-            width: 15rem;
-
-            text-align: center;
-        }
-
-        .button-1 {
-            background: var(--primary-1);
-        }
-
-        .button-2 {
-            background: var(--primary-2);
-        }
-
-        a:hover {
-            background-color: var(--primary-3);
-            color: var(--neutral-100);
-            transition: 0.3s;
-        }
-    }
 }
 
-.colortext {
-    color: var(--primary-1);
+.wrap-main-box-and-bike .main-box {
+    margin-top: 20vh;
+    width: 50%;
+}
+
+.wrap-main-box-and-bike .bike {
+    width: auto;
+}
+
+.wrap-main-box-and-bike .buttons {
+    display: flex;
+    gap: 25%;
+}
+
+.wrap-main-box-and-bike .buttons a {
+    text-decoration: none;
+    color: var(--secondary-1);
+
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 0.25rem solid var(--primary-2);
+    margin: auto 0;
+    width: 15rem;
+
+    text-align: center;
+}
+
+.wrap-main-box-and-bike .buttons .button-1 {
+    background: var(--primary-1);
+}
+
+.wrap-main-box-and-bike .buttons .button-2 {
+    background: var(--primary-2);
+}
+
+.wrap-main-box-and-bike .buttons a:hover {
+    background-color: var(--primary-3);
+    color: var(--neutral-800);
+    transition: 0.3s;
 }
 
 #wide-line {
@@ -60,23 +64,87 @@
 
     position: relative;
     background-color: var(--primary-2);
-    
+
     width: 100%;
     height: 20rem;
     margin: 5% 0;
 
 }
 
-.wide-line-block {
+#wide-line .wide-line-block {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 
-    span {
-        color: var(--neutral-800);
+}
+
+#wide-line .wide-line-block span {
+    color: var(--neutral-100);
+}
+
+#wide-line .wide-line-block p {
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--neutral-400);
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    overflow-y: scroll;
+    margin: 50px 0 250px;
+    padding-bottom: 48px;
+    scrollbar-width: none;
+}
+
+.review {
+    flex-shrink: 0;
+    background: var(--neutral-400);
+    width: 20rem;
+    padding: 0 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 14px 14px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.review h6 {
+    margin: 20px 0 0;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .wrap-main-box-and-bike .main-box {
+        margin-top: 0;
+        width: 80%;
     }
-    p {
-        margin: 8rem;
-        text-align: center;
-        color: var(--neutral-500);
+
+    .bike {
+        display: none;
+    }
+
+
+    .wrap-main-box-and-bike {
+
+        min-height: 20vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .wrap-main-box-and-bike .buttons {
+        gap: 5%;
+    }
+
+    .reviews {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .review {
+        width: 15rem;
+        margin: 0 auto;
     }
 }

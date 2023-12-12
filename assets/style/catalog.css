@@ -1,0 +1,170 @@
+.oops {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.cards {
+    min-height: 20vw;
+    gap: 80px;
+    display: grid;
+    max-width: 70%;
+    margin: 0 auto 200px;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    position: relative;
+    font-family: var(--main-font);
+
+    width: 376px;
+    height: 686px;
+
+    border-radius: 8px;
+    border: 1px solid var(--primary-2);
+    box-shadow: 0px 14px 14px 0px rgba(0, 0, 0, 0.25);
+    background: var(--neutral-300);
+
+}
+
+.card .info {
+    margin-left: 22px;
+    margin-top: 22px;
+}
+
+.card .item_img {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 335px;
+    height: 465px;
+
+    margin: 22px auto 0;
+    border-radius: 21px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.like {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+
+    width: 36px;
+    height: 36px;
+
+    border: var(--primary-1);
+    border-radius: 18px;
+    border: 1px solid var(--primary-2);
+    background: var(--neutral-200);
+
+}
+
+.card .like img {
+    position: relative;
+    top: 2px;
+    height: 16px;
+    margin: 0 auto;
+}
+
+
+.card .price {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+
+    color: var(--primary-2);
+}
+
+.card .name {
+    margin: 0;
+    font-size: 23px;
+
+}
+
+.card .rating {
+    margin: 0;
+    font-size: 20px;
+
+}
+
+
+.card .rate {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.card .rate svg {
+    padding-right: 8px;
+    width: 19px;
+    height: 19px;
+
+    stroke: var(--primary-2);
+}
+
+.card .item_count {
+
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    margin-right: 22px;
+}
+
+.item_count button {
+    width: 48px;
+    height: 48px;
+
+    color: var(--neutral-100);
+    background: var(--neutral-600);
+
+    border: none;
+    border-radius: 8px;
+
+}
+
+.item_count button:hover {
+    background-color: var(--neutral-500);
+}
+
+.item_count button:active {
+    border: 3px solid var(--neutral-600);
+}
+
+.item_count .count {
+    width: 70.286px;
+    height: 48px;
+    line-height: 48px;
+
+    border-radius: 8px;
+    background: var(--neutral-300);
+}
+
+.liked {
+    background: var(--active-like-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .cards {
+        margin: 0 auto;
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .cards {
+        margin: 3%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

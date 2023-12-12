@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 6rem;
+
+    nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--neutral-200);
+        margin: auto 0;
+    }
+
+    .login_button {
+        background: var(--primary-1);
+        color: var(--secondary-1);
+
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        border: 1px black solid;
+        height: 4rem;
+        margin: auto 0;
+    }
+
+    img {
+        display: block;
+        margin: auto 0;
+    }
+
+
+    a:hover {
+        color: var(--primary-1);
+        border-bottom: 0.125rem solid var(--primary-1);
+        transition: .1s;
+    }
+}
+
+.block {
+    display: flex;
+    width: 1440px;
+    height: 1000px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
